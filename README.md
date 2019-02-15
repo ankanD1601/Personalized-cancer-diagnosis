@@ -405,3 +405,82 @@ Metric(s):
    
 </table> 
 
+<h1> Taking the CV logloss to below 1 </h1>
+
+<h3>Log loss of Cv below 1</h3>
+<p>Here is a Comparison of our models.</p>
+
+
+<table style="width:100%">
+  <tr>
+      <th></th>
+      
+  <th>Model</th>
+    <th>Train Logloss</th>
+    <th>Test Logloss</th>
+       <th>CV Logloss</th>
+      <th>Missclassified points</th>
+      
+
+  <tr>
+    <td></td>
+    <td>Logistic regression with weight balancing</td>
+    <td>0.488</td>
+    <td>0.55</td>
+    <td>0.541</td>
+       <td>12%</td>
+       
+   </tr>
+  <tr>
+   <td></td>
+    <td>Logistic regression without weight balancing</td>
+    <td>0.488</td>
+    <td>0.55</td>
+    <td>0.541</td>
+       <td>12%</td>
+        
+   </tr>
+  <tr>
+       <td></td>
+    <td>Linear SVM</td>
+    <td>0.463</td>
+    <td>0.551</td>
+    <td>0.544</td>
+       <td>11%</td>
+     
+   
+  </tr>
+  
+  
+  
+   <tr>
+       <td></td>
+    <td>Naive Bayes</td>
+    <td>0.811</td>
+    <td>0.821</td>
+    <td>0.77</td>
+       <td>23%</td>
+    
+   <tr>
+       <td></td>
+    <td>KNN</td>
+    <td>0.028</td>
+    <td>0.029</td>
+    <td>0.024</td>
+       <td>0.3%</td>
+        
+   
+  </tr>
+  
+  
+   <tr>
+       <td></td>
+    <td>RF</td>
+    <td>0.337</td>
+    <td>0.527</td>
+    <td>0.509</td>
+       <td>16%</td>
+        
+   
+  </tr>
+ </table>   
